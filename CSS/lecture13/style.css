@@ -1,0 +1,52 @@
+.box{
+    background-color: beige;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease;
+}
+
+.box:hover{
+
+    /* This is basically transformation of our elements */
+    /* This is roation of element */
+    transform: rotate(45deg);
+    /* will roate in opposite direction */
+    transform: rotate(-45deg);
+
+    /* Inc or dec the size of the element */
+    transform: scale(2);
+    transform: scale(0.5);
+
+    /* To scew */
+    transform: skew(45deg);
+
+    /* Movement of element via x and y direction translate(x-axis, y-axis)*/
+    transform: translate(200px, 300px);
+    transform: translate(-200px, -300px);
+
+    /* This is movement of single elemet using skew and trasnslate matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+    transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+}
+
+p{
+    font-size: 20px;
+}
+
+.container{
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,44 @@
+#division{
+    position: relative;
+    border: 2px black solid;
+    height: 1000px;
+}
+
+img{
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Below will be example of postitioning of elemets throughout the page */
+.poster1{
+    /* This is and example of postioning of elemets with custom setting and this is will be relative to present viewport(webpage)  */
+    /* Also the orignal space of the tag will be intact  */
+    /* And by default the postion of any tag is static */
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.poster2{
+    /* This is also a type of postion */
+    /* Here while using this the space of our element will be removed and it's side elements will preserve the space */
+    /* Bsically used in the places where overlatpping is required */
+    /* And basically if we want it to work then we need to use directives like left right bottom etc */
+    position: absolute;
+    top: 100px;
+}
+
+.poster3{
+    /* By doing postion as fixed that will be fixed for all the html page weather you scroll to next div or something else it will be fixed */
+    position: fixed;
+    left: 1000px;
+}
+
+.poster4 {
+    /* By using this sticky content will remain fixed but only till the parent tag limit after that it will be not fixed  */
+    position: sticky;
+    top: 50px; /* Sticky starts sticking when it reaches 50px from the top */
+}
+
+
+

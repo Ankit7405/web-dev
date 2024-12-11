@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This is an example of basic login form -->
+    <form>
+        <!-- This tag is considered as a consolidation for the other fields in one entity -->
+        <fieldset>
+            <!-- For the filedset consolidation if we need to give one name to a form then we can give it using legend tag -->
+            <legend>This is HTML form</legend>
+            <!-- This tag is used to create a labale that is basically field to show like what value we need to enter -->
+            <label for="email">User Name:</label>
+            <!-- This is a tag that takes user input -->
+            <!-- For Giving desc about the filed in the grey text we can use placeholder attribuite -->
+            <!-- Required is used this filed must to submit form -->
+            <input type="text" id="email" placeholder="enter email" required>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="enter password" required>
+            <br>
+            <br>
+            <!-- This is to input a field as date -->
+            <label for="datepicker">Choose Date:</label>
+            <input type="date" id="datepicker">
+            <br>
+            <br>
+            <!-- This is example for selector that is fropdown to select options -->
+            <label for="type">Type of User:</label>
+            <select name="usertype" id="type">
+                <option value="" selected disabled>Select a user type</option>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+                <option value="viewer">Viewer</option>
+                <option value="editior">Editor</option>
+            </select>
+            <br>
+            <br>
+            <!-- Text area -->
+            <label for="textArea">Enter your comments here:
+            <textarea name="textArea" rows="10" cols="20" id="textArea" placeholder="enter text here"></textarea>
+            </label>
+            <br>
+            <br>
+            <!-- This is radio button for male and female selection -->
+            <p style="display: inline;">Select Gender:</p>
+            <label for="gender">Male
+                <input type="radio" name="gender" id="gender" value="Male">
+            </label>
+            <label for="gender">Female
+                <input type="radio" name="gender" id="gender" value="Female">
+            </label>
+            <br>
+            <br>
+            <!-- This is an example of checkbox -->
+            <p style="display: inline;">Select language:</p>
+            <label for="checkbox">English</label>
+            <input type="checkbox" id="checkbox" value="English">
+            <label for="checkbox">Hindi</label>
+            <input type="checkbox" id="checkbox" value="Hindi">
+            <br>
+            <br>
+            <!-- This is example of file select tag -->
+            <label for="fileSelect">Choose File:</label>
+            <input type="file" id="fileSelect">
+            <br>
+            <br>
+            <!-- This is one way to create a submit button -->
+            <input type="submit" value="Submit">
+            <!-- This is another way of creating button -->
+            <button id="submitButton">Submit</button>
+            <br>
+            <br>
+            <!-- This is an example of image with link -->
+            <input type="image" id="imageButton" src="login.png" alt="login" height="25px" width="25px">
+        </fieldset>
+    </form>
+</body>
+</html>

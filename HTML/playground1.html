@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Below will be example of usage of emmet plugin to write html code in quick manner -->
+    <!-- Parent chaild shortcut parent>child eg p>h3 -->
+    <p>
+        <h3></h3>
+    </p> 
+
+    <!-- Multiple elements p>p>p -->
+    <p>
+        <p>
+            <p></p>
+        </p>
+    </p>
+
+    <!-- Addition of same multiple elemets ul>li*4 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- Defining content also p{content} -->
+    <p>This is my para</p>
+
+    <p>this is my para
+        <h3>This is my heading inside para</h3>
+    </p>
+
+    <!-- Tags in side by side manner p+a -->
+    <p></p>
+    <a href=""></a>
+
+    <!-- Creation of id for any tag p#idName -->
+    <p id="para1"></p>
+    <article id="article1"></article>
+
+    <!-- Creation of class of any tag article.className1.className2.className3.... -->
+    <article class="dog"></article>
+    <article class="dog mammel entity"></article>
+
+    <!-- Grouping of data using () table>(tr>td*4{content})*2 -->
+    <table>
+        <tr>
+            <td>Alfa</td>
+            <td>Alfa</td>
+            <td>Alfa</td>
+            <td>Alfa</td>
+        </tr>
+        <tr>
+            <td>Alfa</td>
+            <td>Alfa</td>
+            <td>Alfa</td>
+            <td>Alfa</td>
+        </tr>
+    </table>
+
+    <!-- div tag -> this is basically division tag and used to contanarise a pice of html code and treat it as a single block so that we can give some common property to that whole code -->
+    <div id="divName">
+        <article class="dog"></article>
+        <article class="dog mammel entity"></article>
+        <table>
+            <tr>
+                <td>Alfa</td>
+                <td>Alfa</td>
+                <td>Alfa</td>
+                <td>Alfa</td>
+            </tr>
+            <tr>
+                <td>Alfa</td>
+                <td>Alfa</td>
+                <td>Alfa</td>
+                <td>Alfa</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Block elements -> These are elements that takes whole space from left to right and also comes on the next line -->
+    <div style="background-color: aqua;">This is and block div</div>
+    <div style="background-color: aqua;">This is and block div to verify that it comes on next line</div>
+    
+    <!-- Inline elements -> These are the elements that takes only the space that we have used and also comes on the same line -->
+    <span style="background-color: brown;">This is and span tag showing the example of inline elements</span>
+    <span style="background-color: brown;">This is and span tag showing the example of inline elements to verify that it comes on the same line</span>
+
+    <!-- Conversion of block level elemet into inline element -->
+    <div style="display: inline; background-color: antiquewhite;">This is div</div>
+
+    <!-- Arranging the list horizontally and also without bullet points -->
+    <ul type="none">
+        <li style="display: inline;"><a href="">Home</a></li>
+        <li style="display: inline;"><a href="">About Us</a></li>
+        <li style="display: inline;"><a href="">Contact</a></li>
+        <li style="display: inline;"><a href="">Email Us</a></li>
+    </ul>
+</body>
+</html>

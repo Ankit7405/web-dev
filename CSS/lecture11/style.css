@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: beige;
+    height: 100vh;
+    width: 100vw;
+    border: 5px solid black;
+}
+
+.box{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border-radius: 500px;
+    border: 3px solid black;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    /* These are the properties for animations */
+
+    /* This is basically an indentifier for our animation */
+    animation-name: rightMovement;
+    /* Duration of animation */
+    animation-duration: 5s;
+    /* Count for which animation willl be repetely performed */
+    animation-iteration-count: infinite;
+    /* Delay in the start of the animation */
+    /* animation-delay: 1.5s; */
+
+    /* This property defines the type of movement */
+    /* animation-timing-function: ease; */
+    /* Slow at start and fast at end */
+    /* animation-timing-function: ease-in; */
+    /* Linear motion */
+    animation-timing-function: linear;
+    /* animation-timing-function: ease-out; */
+    /* animation-timing-function: ease-in-out; */
+    /* This approch is for manaually defining the motion using beiure curve */
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+
+    /* Defines the movement once anmation is over */
+    /* animation-direction: alternate; */
+
+    /* This defines the action after one round ofanimation is done forward tells it will strop at to postion and backwards tells that it stops at initial postion */
+    animation-fill-mode: forwards;
+}
+
+@keyframes rightMovement {
+    from{
+        top: 0;
+        left: 0;
+    }
+
+    to{
+        top: 0;
+        left: 1200px;
+    }
+}
+

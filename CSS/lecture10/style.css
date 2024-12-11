@@ -1,0 +1,48 @@
+/* What if we need to define a varaible gobally then we need to put that in root */
+:root{
+    --default-color:red;
+}
+
+
+.container{
+    background-color: beige;
+    border: 2px solid black;
+    width: 1500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    /* This is an example of creation of instace variable in CSS */
+    --primary-color:brown;
+
+    background-color: aqua;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+    /* With this keyword we define shadow to the box and here we define x-axis direction and y-axis direction and also colour of the shadow  */
+    /* box-shadow: 10px 10px red; */
+
+    /* This is also same thing but we define blur radius here that defines the intensity of blur the more the value the more it would be blur */
+    /* box-shadow: 10px 10px 15px red; */
+
+    /* Now this is also a type of annotaion and it has one more parameter that defines the spread of the shadow  */
+    /* box-shadow: 10px 10px 15px 50px red; */
+
+    /* Now what if we want shadow but inside our box so for that we use keyword inset */
+    /* box-shadow: inset 10px 10px 15px red; */
+
+    /* We can also add 2 shadows at single time just by giving comma */
+    /* This is also an example how to use variable in CSS */
+    /* box-shadow: 10px 15px red, inset 10px 15px var(--primary-color); */
+
+    box-shadow: 10px 15px red, inset 10px 15px var(--default-color);
+}
+
+#heading{
+    /* This define shadow for text and it notaions will also be similar to box-shadow but there is no shadow spread option here  */
+    text-shadow: 2px 3px 5px blue;
+}

@@ -1,0 +1,119 @@
+.box{
+    background-color: aqua;
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+}
+
+/* This is an example of media query */
+/* This feature is used to make response website throuout any size of devices */
+/* Basically we defone one condition and then write selective CSS code for that condition here. */
+/* @media (min-width: 320px){
+
+    .box{
+        background-color: red;
+        height: 300px;
+        width: 300px;
+    }
+} */
+
+@media (min-width: 300px) and (max-width: 500px){
+
+    .box{
+        background-color: red;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+.container{
+    background-color: beige;
+    height: auto;
+    width: auto;
+    border: 2px solid brown;
+    display: flex;
+
+}
+
+.innerbox{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+#box1{
+    background-color: red;
+}
+
+#box2{
+    background-color: blue;
+}
+
+#box3{
+    background-color: orange;
+}
+
+#box4{
+    background-color: yellow;
+}
+
+
+@media (min-width:600px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1260px){
+    .container{
+        flex-direction: row;
+    }
+}
+
+.mainContainer{
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+}
+
+#leftBox{
+    background-color: burlywood;
+    border: 2px solid saddlebrown;
+    width: 250px;
+    margin: 20px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+#rightBox{
+    background-color: navajowhite;
+    border: 2px solid saddlebrown;
+    margin: 20px;
+    padding: 2px;
+}
+
+p{
+    background-color: brown;
+    border: 2px dashed red;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+}
+
+@media (max-width:640px){
+    .mainContainer{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+

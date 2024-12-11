@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    border: 2px solid brown;
+    /* So the basic function of the box sizing border box is that it maintains the size of the whole element box and based on usage of padding, margin and border and to componsate for that it dec the size of content box*/
+    box-sizing: border-box;
+    height: 500px;
+    width: 500px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.inlinelement{
+    border: 2px solid red;
+    /* Hiegth and width will not be applicable for inline elements */
+    height: 200px;
+    width: 200px;
+
+    /* Custom margin is also not applicable for inline elements also margin is only applicable for left and right side */
+    margin: 20px;
+
+    /* Padding is applicable for inline elements */
+    padding: 20px;
+}
+
+.convertedInlinElement{
+    border: 2px solid red;
+    /* Hiegth and width will not be applicable for inline elements */
+    height: 200px;
+    width: 200px;
+
+    /* Custom margin is also not applicable for inline elements also margin is only applicable for left and right side */
+    margin: 20px;
+
+    /* Padding is applicable for inline elements */
+    padding: 20px;
+
+    /* This will convert the inline element into block element and also now all the properties will be applicable */
+    /* Vise versa is also possible  */
+    display: block;
+}
+
+.convertedInlinBlockElement{
+    border: 2px solid red;
+    padding: 20px;
+    margin: 20px;
+
+    /* This tag keeps the property of inline elements like it maintains the content width by default and also 2 elements comes side by side */
+    /* But also gives user permission to use custom width and hiegth */
+    display: inline-block;
+
+    height: 150px;
+    width: 150px;
+}

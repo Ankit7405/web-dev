@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parent{
+    background-color: aqua;
+    border: 2px solid brown;
+
+    /* Now for this parent would be body tag and that would consume whole page so would be 60 percentage of that */
+    /* width: 60%; */
+}
+
+.child{
+    background-color: red;
+    border: 2px solid black;
+
+    /* This is an absolute way of defining the size using px notation */
+    /* width: 1000px; */
+
+    /* Relative noation in terms of % */
+    /* But the important point here is that it is always 50% of the parent tag in our case we have div of parent and it is 50% of that */
+    /* width: 50%; */
+
+    /* This is also a tpye of natation based on viewport */
+    /* here v -> viewport and w,h -> widhth and hiegth */
+    width: 50vw;
+    height: 100vh;
+
+    font-size: xx-large;
+}
+
+.container{
+    padding: 5px;
+    font-size: 10px;
+}
+
+.box{
+    /* This em annotation is is relative annotation which is relative to it's parent also if we see in parent we defined font as 10px  */
+    /* So em will make it as 10 * 10em -> 100px */
+    /* Moreover of we use padding on top of that it becomes relative to font so that becomes 100 * 10em -> 1000px */
+    /* padding: 10em; */
+    /* font-size: 10em; */
+
+    /* This is relative em so basically this will make fontsize relative to root tag that is html  */
+    /* So here for html default font size is 16px and now it becomes as 16*10 -> 160px */
+    font-size: 10rem;
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Cration of basic table -->
+    <table border="1">
+        <!-- This thead tag is used to represent the header of the table -->
+        <thead>
+            <!-- for every header element we need to define the element by th tag -->
+            <th>Student Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <!-- This tag defines the data in the table -->
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td>Alok</td>
+                <td>Male</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>124</td>
+                <td>Amit</td>
+                <td>Male</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>125</td>
+                <td>Ankit</td>
+                <td>Male</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>126</td>
+                <td>Ashok</td>
+                <td>Male</td>
+                <td>24</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Condition for colspan and rowspan -->
+    <table border="1">
+        <!-- This thead tag is used to represent the header of the table -->
+        <thead>
+            <!-- for every header element we need to define the element by th tag -->
+            <th>Student Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <!-- This tag defines the data in the table -->
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td>Alok</td>
+                <td>Male</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>124</td>
+                <td>Amit</td>
+                <td>Male</td>
+                <td rowspan="3">25</td>
+            </tr>
+            <tr>
+                <td>125</td>
+                <td>Ankit</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>126</td>
+                <td>Ashok</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1">
+        <!-- This thead tag is used to represent the header of the table -->
+        <thead>
+            <!-- for every header element we need to define the element by th tag -->
+            <th>Student Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <!-- This tag defines the data in the table -->
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td>Alok</td>
+                <td>Male</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>124</td>
+                <td>Amit</td>
+                <td>Male</td>
+                <td rowspan="3">25</td>
+            </tr>
+            <tr>
+                <td colspan="3">125</td>
+            </tr>
+            <tr>
+                <td colspan="3">126</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table 2 example -->
+    <table border="1">
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
+
+    <!-- Table 3 example -->
+    <table border="1">
+        <thead>
+            <th>S No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Fouder Microsoft</td>
+                <td>1000$</td>
+                <td rowspan="4">Company Founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Founder Apple</td>
+                <td>1200$</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>1500$</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zurerburger</td>
+                <td>Founder Facebook</td>
+                <td>2000$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Expenses:</td>
+                <td>4600$</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Table 4 Example -->
+    <table border="1">
+        <thead>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Others</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="8">1</td>
+                <td rowspan="4">Kerela</td>
+                <td rowspan="2">Cochin</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Main Street</td>
+                <td>300</td>
+                <td>288</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Triviandram</td>
+                <td>Guru Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>TVK Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Maharashtra</td>
+                <td rowspan="2">Mumbai</td>
+                <td>Krishan Street</td>
+                <td>700</td>
+                <td>850</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Main Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Surath</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Billa Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Alaska</td>
+                <td rowspan="2">AKA Central</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Cross Street</td>
+                <td>600</td>
+                <td>700</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: fit-content;
+    width: fit-content;
+}
+
+.container{
+    height: max-content;
+    width: 100vw;
+    background-color: antiquewhite;
+
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* So this is the approch to make grid auto response to change in width or the screen size */
+    /* Here we have made the count as autofit that defines that make column arrangment such that it fits the page */
+    /* And here we have defined the minmax() function to define the min and max width of our element  */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 500px)); */
+
+    gap: 20px;
+    padding: 20px;
+
+    /* So with this apprch we can make layouts easily if we have 2 matrix represnetation of that. */
+    /* Here first for every block we need to assign id to it */
+    /* Then we need to create grid-area: {id_name}; block for that */
+    /* Then based on the id name we need to assign values to this matrix */
+    grid-template-areas: 
+    "header header header"
+    "sidebar content1 content1" 
+    "sidebar content2 content3"
+    "footer footer footer"
+    ;
+}
+
+.item{
+    background-color: blue;
+    color: white;
+    border: 4px solid black;
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#header{
+    grid-area: header;
+}
+
+#sidebar{
+    grid-area: sidebar;
+}
+
+#content1{
+    grid-area: content1;
+}
+
+#content2{
+    grid-area: content2;
+}
+
+#content3{
+    grid-area: content3;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+
+
+
+

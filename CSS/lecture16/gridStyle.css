@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+
+    background-color: grey;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    gap: 20px;
+    padding: 20px;
+
+    /* This property is for container level and is for horizontal arrangement */
+    justify-items: start;
+
+    /* This property is for vertical arrangement */
+    align-items: end;
+
+    /* Combination of above 2 property */
+    place-items: center;
+}
+
+.item{
+    height: 200px;
+    width: 200px;
+
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+
+    /* This defines the psotion of our frid block througout the view port */
+    /* This property is for horizontal axis */
+    /* justify-self: end; */
+
+    /* This property defines the postion of our element in a particlular cell */
+    /* This property is for vertical axis positioning */
+    /* align-self: end; */
+
+    /* This property is the combination of justify-self and align-self and by giving a postion it places it respect to both the axis  */
+    /* place-self: center; */
+}

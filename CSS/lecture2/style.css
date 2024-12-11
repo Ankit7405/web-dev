@@ -1,0 +1,40 @@
+#para1{
+    /* This defines font style */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+
+    color: black;
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+    /* This defines the space between lines */
+    line-height: 25px;
+}
+
+/* This is one way of picking color for fonts */
+#para2{
+    background-color: blueviolet;
+    color: brown;
+}
+
+/* This is selection of rgb color using rgb values(absolute without transperancy) */
+#para3{
+    background-color: rgb(47, 180, 213);
+}
+
+/* This is selection of colour using rgb picker but here is one more parameter which defines transperancy 0 -> fully transparent 1 -> opaque */
+#para4{
+    background-color: rgba(223, 191, 30, 0.5);
+}
+
+/* This is defination of color using hexa color code */
+.para5{
+    background-color: #ffabff;
+}
+
+/* This is an example of defination of color using hsl  */
+.para6{
+    background-color: hsl(50, 120%, 60%);
+}

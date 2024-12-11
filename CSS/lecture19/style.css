@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+
+    background-color: antiquewhite;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.item{
+    height: 150px;
+    width: 150px;
+
+    background-color: green;
+    border: 2px black solid;
+    color: black;
+
+    align-content: center;
+    text-align: center;
+}
+
+#RotateX:hover{
+    transform: rotateX(45deg);
+}
+
+#RotateY:hover{
+    transform: rotateY(45deg);
+}
+
+#RotateZ:hover{
+    transform: rotateZ(45deg);
+}
+
+#TranslateX:hover{
+    transform: translateX(100px);
+}
+
+#TranslateY:hover{
+    transform: translateY(100px);
+}
+
+#TranslateZ:hover{
+    transform: perspective(300px) translateZ(200px);
+}
+
+#ScaleX:hover{
+    transform: scaleX(1.5);
+}
+
+#ScaleY:hover{
+    transform: scaleY(1.5);
+}
+
+#ScaleZ:hover{
+    transform: perspective(200px) scaleZ(1.5) rotateY(45deg);
+}

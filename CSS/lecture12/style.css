@@ -1,0 +1,23 @@
+.box{
+    background-color: beige;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+
+    /* Baiscally transictions are used for making some actions when we trigger it via some action */
+    /* These are the trasiction properties */
+    transition-property: all;
+    transition-duration: 10s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+
+    /* Can also give 2 transiction in one line */
+    /* transition: all 2s ease, width 3s ease-out; */
+}
+
+/* Here we need to define some action otherwise transiction property will not work */
+.box:hover{
+    width: 1000px;
+    height: 500px;
+    background-color: red;
+}

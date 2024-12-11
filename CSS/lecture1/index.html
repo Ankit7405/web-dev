@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Linking external CSS file -->
+    <!-- If we talk about priority between internal and external CSS that is dependent on initilization if we have linitilised link tag before stype tag then external will given priority and vise versa -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- This is an exaple of internal css -->
+    <style>
+        /* If we talk about the priority then inlines css will give priority over internal CSS and external CSS */
+        /* But if we wanted to give explict priority to internal CSS over inline then we need to use !important */
+        p{
+            background-color: aqua !important;
+        }
+        h1{
+            color: blueviolet;
+        }
+
+        /* Selector using id attribute always selected using # symbole */
+        #articleid1{
+            background-color: yellow;
+        }
+
+        /* This is an exapmle of class selector used with . symbole */
+        .paraclass1{
+            text-align: right;
+            color: yellowgreen;
+        }
+
+        /* This is an example of group selector */
+        p,article{
+            width: 600px;
+        }
+
+        /* This can also be used as a combination of ids and class */
+        p.paraclass1, article#articleid1{
+            text-transform: capitalize;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+
+    <!-- This is an example of inline css -->
+    <p style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae incidunt quisquam ad necessitatibus ipsam a amet animi molestiae at minima.</p>
+
+    <p style="background-color: brown;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ullam ad voluptas expedita temporibus. Reprehenderit ab repellendus sapiente tempore. Excepturi consectetur nihil quas labore esse optio nisi cupiditate, nobis porro.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id officiis, odio explicabo a dolores ab non enim sunt perspiciatis repellat nulla soluta facere temporibus. Sed, modi explicabo possimus quod voluptate minus qui, facere neque reprehenderit saepe nihil aperiam adipisci dolor vitae porro ipsa et excepturi tenetur blanditiis, amet officiis provident.</p>
+
+    <article id="articleid1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, accusamus omnis aliquid, dolor laudantium deleniti facere accusantium dignissimos laboriosam explicabo libero mollitia ea maiores velit eveniet temporibus nihil tempore? Dolores.
+    </article>
+
+    <p class="paraclass1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore iure magni neque doloribus asperiores rem dolores eligendi aperiam, officia fugiat atque cum distinctio repellat eos voluptate facere consequatur delectus similique corporis odit cupiditate enim veniam. Provident quis hic veniam reprehenderit modi consequuntur doloribus eaque repellendus.</p>
+
+    <footer>I am a footer</footer>
+</body>
+</html>

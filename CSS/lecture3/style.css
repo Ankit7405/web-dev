@@ -1,0 +1,80 @@
+/* This is an example of universal selector basically as a good prtice we need to define some propeties for all our CSS elements and for that we can use this so that to all the css elements these properties will be applied */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#heading{
+    background-color: bisque;
+    /* Below are the examples of bborder and it's diffrent varations */
+
+    /* border-style: solid;
+    border-color: brown;
+    border-width: 5px; */
+
+    /* Sort hand formation for border */
+    border: solid black 4px;
+
+    /* Making corders smooth  */
+    border-radius: 5px;
+
+    /* Specific borders */
+    /* border-bottom: solid red 5px; */
+    /* border-top: red solid 5px; */
+    /* border-left: dashed red 5px; */
+    /* border-right: solid red 5px; */
+
+    /* Selective border radius */
+    /* border-top-left-radius: 10px; */
+
+    width: 290px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+#para1{
+    background-color: antiquewhite;
+    border: solid black 4px;
+    /* This basically defines the space between content and border */
+    /* padding: 50px; */
+
+    /* Directional padding notation */
+    /* padding-left: 20px; */
+    /* padding-top: 50px; */
+
+    /* Short hand notation for padding in all the directions top -> right -> bottom -> left */
+    /* padding: 10px 20px 30px 40px; */
+
+    /* Another notation bottom, top -> right, left */
+    padding: 10px 40px;
+
+    /* This defines space between 2 different content */
+    margin: 10px;
+    border-radius: 5px;
+    width: 290px;
+}
+
+#para2{
+    background-color: blue;
+    border: solid black 4px;
+    border-radius: 5px;
+    width: 290px;
+}
+
+#para3{
+    background-color: blueviolet;
+    border: solid black 4px;
+    border-radius: 5px;
+    width: 290px;
+}
+
+#span1{
+    background-color: bisque;
+    border: solid black 4px;
+    border-radius: 5px;
+    /* Span being an inline tag so that hieght and width is not aplicable for these tag */
+    width: 290px;
+    height: 50px;
+}
+

@@ -1,0 +1,26 @@
+#poster1{
+    height: 200px;
+    width: 200px;
+
+    /* This float property is basically used to make an image float onto the given postion with text sroudding it */
+    float: right;
+}
+
+#poster2{
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    float: right;
+
+    /* Basically this property tells that if there is some adjustanat image with flaot then we need to clear that effect */
+    clear: right;
+}
+
+#container{
+   border: 2px solid black; 
+   height: 400px;
+   width: 400px;
+
+   /* Here in this case we have crated one box and inside that there would be some content but since content is more so it gets overflow so to handle that there is this property named overflow */
+    overflow: auto;
+}
