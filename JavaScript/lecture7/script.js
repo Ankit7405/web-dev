@@ -57,7 +57,7 @@ let obj = {
     }
 };
 
-obj.greet("Ankit ", "Bhopal"));
+obj.greet("Ankit ", "Bhopal");
 
 
 
