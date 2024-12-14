@@ -60,6 +60,59 @@ console.log(arr2);
 arr.splice(1, 2, "Bhopal", 123);
 console.log(arr);
 
+// map method -> This is basically have same function as map function of streams here also it is used to extract the elements from array and then if possible do some manuplation on them
+// In this example we rae only extracting the values of the array
+let arr4 = [10, 20, 30];
+let arrMap = arr4.map((number) => {
+    return number * number;
+});
+console.log("Map function output" + arrMap);
+
+// We can also extract the vales and the respective index of that array also similar to the hashmap
+// Need to keep one point in mind aobut the sequence like first argument will be value and the next one is index
+let arrMap1 = arr4.map((value, index) => {
+    console.log("Index is : " + index + " Value for that index is : " + value);    
+});
+
+// Filter function -> behaves similar to the filter function in streams
+let arr5 = [23, 20, 56, 43, 31, 50];
+let ansArr1 = new Array();
+let filterAns =  arr5.filter((number) => {
+    if(number % 2 == 0){
+        ansArr1.push(number);
+        return number;       
+    }
+});
+console.log(ansArr1);
+console.log(filterAns);
+
+let filterAns1 =  arr.filter((value) => {
+    if(typeof(value) === 'number'){
+        return value;
+    }
+});
+console.log(filterAns1);
+
+
+// Reduce method -> This method is also similar to that of streams here also it is used to do some calulations on our vllaues of array and then return a single result
+// Here in it's syntax we have 2 component that is accumulator and current value
+// And also initial vallue of accumulator we need to set in this case we set as 0
+// Initialy accumulator picks initial value and curr picks arr[0] value
+// And then based on the function the value is calculated and progressed
+let sum = arr5.reduce((acc, curr) => {
+    return acc + curr
+}, 0);
+console.log(sum);
+
+
+
+
+
+
+
+
+
+
 
 
 
