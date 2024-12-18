@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 id="countdown-heading">Countdown Timer</h1>
+        <form id="dateForm">
+            <label for="startDate">Start Date (e.g., 26 Dec, 2024 21:00:00):</label>
+            <input type="datetime-local" id="startDate" placeholder="Enter start date" required>
+            
+            <label for="endDate">End Date (e.g., 26 Dec, 2024 21:00:00):</label>
+            <input type="datetime-local" id="endDate" placeholder="Enter end date" required>
+            <button type="submit">Start Timer</button>
+          </form>
+        <div id="countdown">
+            <div class="countdown-container">
+                <span id="days">00</span> Days
+            </div>
+            <div class="countdown-container">
+                <span id="hours">00</span> Hours
+            </div>
+            <div class="countdown-container">
+                <span id="minutes">00</span> Minutes
+            </div>
+            <div class="countdown-container">
+                <span id="seconds">00</span> Seconds
+            </div>
+        </div>
+
+        <h2 id="progressbar-heading">Progress: </h2>
+        <div class="progress-container">
+            <div id="progressbar"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
