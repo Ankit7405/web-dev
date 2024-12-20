@@ -31,7 +31,7 @@ let timeCode = time4 - time3;
 console.log("Time to perform code 2 operation ", timeCode);
 
 // Code 3 : Best approch
-// Since we are appending onto div but what if we want to append more than one chaild so that process will take 1reflow and 1repaint 
+// Since we are appending onto div but what if we want to append more than one child so that process will take 1 reflow and 1 repaint 
 // So now we will be using one other type of element i.e. document fragment
 // The advantage of this fragment is that like appending any number of child will not increase count of reflow and repaints
 let time5 = performance.now();

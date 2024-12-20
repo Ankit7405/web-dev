@@ -52,7 +52,7 @@ arr.unshift(1);
 console.log(arr);
 
 // Slice method -> It's like a substring for an array and with this we can extract a part of an array
-// Here we defone the starting and ending index but the starting is inclusive and ending index is exclusive
+// Here we define the starting and ending index but the starting is inclusive and ending index is exclusive
 let arr2 = arr.slice(2, 3);
 console.log(arr2);
 
@@ -61,7 +61,7 @@ arr.splice(1, 2, "Bhopal", 123);
 console.log(arr);
 
 // map method -> This is basically have same function as map function of streams here also it is used to extract the elements from array and then if possible do some manuplation on them
-// In this example we rae only extracting the values of the array
+// In this example we are only extracting the values of the array
 let arr4 = [10, 20, 30];
 let arrMap = arr4.map((number) => {
     return number * number;
@@ -94,7 +94,7 @@ let filterAns1 =  arr.filter((value) => {
 console.log(filterAns1);
 
 
-// Reduce method -> This method is also similar to that of streams here also it is used to do some calulations on our vllaues of array and then return a single result
+// Reduce method -> This method is also similar to that of streams here also it is used to do some calulations on our values of array and then return a single result
 // Here in it's syntax we have 2 component that is accumulator and current value
 // And also initial vallue of accumulator we need to set in this case we set as 0
 // Initialy accumulator picks initial value and curr picks arr[0] value
