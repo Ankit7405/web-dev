@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: bisque;
+    color: rgb(54, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color:  rgb(180, 159, 133);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 25px;
+    width: 70%;
+    max-width: 700px;
+    border-radius: 20px;
+}
+
+#application-heading{
+    text-align: center;
+}
+
+.user-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input{
+    border-radius: 3px;
+    border: 1px solid gray;
+    width: 40%;
+    font-size: 0.8rem;
+    padding: 2px;
+}
+
+button{
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 3px 10px;
+    font-weight: bold;
+    background-color: #54df75;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#user-lable{
+    font-weight: bold;
+}
+
+.circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #218838;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: bold;
+    background: conic-gradient(#218838 var(--progress-degree, 0%),  rgb(180, 159, 133) 0%);
+}
+
+.circle span{
+    position: relative;
+    z-index: 2;
+}
+
+.progress{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.stats-card{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+.card{
+    background-color: #218838;
+    width: 50%;
+    max-width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    min-height: 4rem;
+}
+
+.error-desc{
+    text-align: center;
+}
+
+
+
+
