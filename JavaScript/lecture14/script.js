@@ -35,4 +35,3 @@ firstPara.classList.remove('thirdClass');
 firstPara.classList.toggle('firstClass');
 // Chekcs the avaibility abut the class
 firstPara.classList.contains('firstClass');
-

@@ -54,7 +54,7 @@
 // bodyTag.appendChild(fheading);
 
 // In appendChild we have a limitation that element will always be inserted in the end
-// If we want to insert elemet at random position then we have to use insertAdjustmentElement
+// If we want to insert element at random position then we have to use insertAdjustmentElement
 // let elementSelected = document.querySelector('#mydiv');
 // let newElement = document.createElement('span');
 // newElement.textContent = "This is new element span";

@@ -15,16 +15,16 @@ console.log("Power like a to the power b" + (a ** b));
 let c = 5;
 // Pre increment -> First print current value and then increase the value
 console.log(c++);
-console.log(c);
+console.log("Pre Increment",c);
 
 let d = 5;
-// Post increment -> First print the value and then increase the value
+// Post increment -> First inc or dec the value and then print it
 console.log(--d);
 console.log(d);
 
 // Comparison operator
 // Loose equality it is denoted by ==
-// Here it ust compares the value and does not comapre the type of the variable and returns result 
+// Here it just compares the value and does not comapre the type of the variable and returns result 
 console.log("5" == 5);
 console.log(false == 5);
 

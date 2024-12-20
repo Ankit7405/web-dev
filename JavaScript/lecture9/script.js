@@ -3,7 +3,7 @@
 class Student {
     // By default all the members or parameters are public but if want to make it private then we need to use # with field name
     studName = "Ankit";
-    // Now this becomes provate member
+    // Now this becomes private member
     #age = 45;
     city = "Bhopal";
     isMale = true;
@@ -75,7 +75,7 @@ sayFullName();
 
 // We can also pass objects and arrays as default arguemts
 function returnValue(value = {name: "Default_name", age : 45, city: "Default_city"}){
-    // We have of remember her that if we use + to concatinate the results then it will be converted to string so will not give correct result in this case of objects and arrays
+    // We have of remember here that if we use + to concatinate the results then it will be converted to string so will not give correct result in this case of objects and arrays
     // So for these cases use , instead of + 
     console.log("Returning diffrent types of values", value);
 }

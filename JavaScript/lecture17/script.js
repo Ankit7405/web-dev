@@ -1,5 +1,5 @@
 // Promises are basically used for asynchronous process to mark it's state like : pending, resolved, reject
-// It's basically comes into mpicture because there is no multihreading in JS and we have to some how handle async process or methods so we use this to handle it's execution result
+// It's basically comes into picture because there is no multihreading in JS and we have to some how handle async process or methods so we use this to handle it's execution result
 
 // let firstPromise = new Promise( (resolve, reject) =>{
 //     // If we put sync code inside this promise then it would run normally as it was runnig previously
