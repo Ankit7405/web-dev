@@ -54,10 +54,10 @@
 
     /* This property is for flex items and defines the order so if we increase the order then it moves more to the end */
     /* And as we dec the order it moves towards the starting */
-    order: 4;    
+    order: -1;    
 
     /* Defines the capacity of item to shrink like we inc the vale then item will shrink lately as comapred to normal element */
-    flex-shrink: 5;
+    flex-shrink: 3;
 
     /* This dines how on enlaring the element will look as compared to the other elements */
     /* flex-grow: 5; */

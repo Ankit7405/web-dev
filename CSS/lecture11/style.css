@@ -43,10 +43,10 @@
     /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
 
     /* Defines the movement once anmation is over */
-    /* animation-direction: alternate; */
+    animation-direction: alternate;
 
     /* This defines the action after one round ofanimation is done forward tells it will strop at to postion and backwards tells that it stops at initial postion */
-    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
 }
 
 @keyframes rightMovement {

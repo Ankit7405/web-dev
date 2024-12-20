@@ -22,5 +22,5 @@
    width: 400px;
 
    /* Here in this case we have crated one box and inside that there would be some content but since content is more so it gets overflow so to handle that there is this property named overflow */
-    overflow: auto;
+    overflow: hidden;
 }
