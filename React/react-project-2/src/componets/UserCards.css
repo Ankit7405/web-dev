@@ -1,0 +1,11 @@
+.user-container{
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#user-img{
+    height: 150px;
+    width: 150px;
+}
