@@ -1,0 +1,10 @@
+#container{
+  height: 200px;
+  width: 200px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: beige;
+}
