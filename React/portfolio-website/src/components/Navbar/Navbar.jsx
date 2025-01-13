@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
-import { assets } from "../../assets/nav/nav";
+import { assets } from "../../../assets/nav/";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

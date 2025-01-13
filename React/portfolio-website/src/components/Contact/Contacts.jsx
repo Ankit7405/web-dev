@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Contacts.module.css';
-import { getImageUrl } from '../../utils';
+import { getImageUrl } from "../../utils";
 
 const Contacts = () => {
   return (

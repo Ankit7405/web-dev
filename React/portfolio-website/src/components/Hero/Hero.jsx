@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Hero.module.css";
-import { assets } from "../../assets/hero/hero";
+import { assets } from "../../../assets/hero/hero";
 
 const Hero = () => {
   return (
