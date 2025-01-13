@@ -1,0 +1,26 @@
+[
+    {
+        "role" : "Software Developement Engineer",
+        "organisation": "HSBC",
+        "startDate": "June, 2024",
+        "endDate": "Present",
+        "experince": ["Worked on banking messaging based applications", "Worked on scaling and optimising the application to onboard new consumers across the globe"],
+        "imageSrc": "history/HSBC.png"
+    },
+    {
+        "role" : "Software Engineer",
+        "organisation": "Impetus",
+        "startDate": "Nov, 2023",
+        "endDate": "June, 2024",
+        "experince": ["Worked on big data product to migrate data sources for consumers", "Worked on big data tehnologies like Redshift, Glue notebook etc"],
+        "imageSrc": "history/impetus_logo_Logo.jpg"
+    },
+    {
+        "role" : "Application Developement Analyst",
+        "organisation": "Accenture",
+        "startDate": "June, 2021",
+        "endDate": "Nov, 2023",
+        "experince": ["Worked as a backend developer of many clients like BMW, Axis bank, Macquire bank etc", "Worked on scaling and optimising the application to onboard new consumers across the globe"],
+        "imageSrc": "history/accentureLogo3.png"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Smart Contact Manager",
+        "imageSrc": "projects/project.png",
+        "description": "This project was made to manage contacts and do operations of saving, exporting to cloud or phone, deleting etc",
+        "skills": ["Java", "Spring Boot", "MySQL", "TailwindCSS"],
+        "demo": "#",
+        "source": "https://github.com/Ankit7405/Smart-Contact-Manager.git"
+    },
+    {
+        "title": "Paste Application",
+        "imageSrc": "projects/project.png",
+        "description": "This project was made to create a solution of global content saving and can be used whenever needed",
+        "skills": ["React", "Javascript", "MySQL", "TailwindCSS"],
+        "demo": "#",
+        "source": "https://github.com/Ankit7405/Paste_Application.git"
+    },
+    {
+        "title": "Gemini Clone",
+        "imageSrc": "projects/project.png",
+        "description": "This project was made to create a Generatvie AI tool clone i.e. Gemini to understand working behind the API and prompts",
+        "skills": ["React", "Javascript", "TailwindCSS"],
+        "demo": "#",
+        "source": "https://github.com/Ankit7405/gemini_application.git"
+    }
+]

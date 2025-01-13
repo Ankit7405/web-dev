@@ -1,0 +1,38 @@
+[
+    {
+        "title" : "Java",
+        "imageSrc": "skills/javaLogo2.png"
+    },
+    {
+        "title" : "MySQL",
+        "imageSrc": "skills/mysqlLogo1.png"
+    },
+    {
+        "title" : "HTML",
+        "imageSrc": "skills/html.png"
+    },
+    {
+        "title" : "CSS",
+        "imageSrc": "skills/css.png"
+    },
+    {
+        "title" : "JavaScript",
+        "imageSrc": "skills/jsLogo2.png"
+    },
+    {
+        "title" : "React",
+        "imageSrc": "skills/react.png"
+    },
+    {
+        "title" : "AWS",
+        "imageSrc": "skills/awsLogo1.png"
+    },
+    {
+        "title" : "Docker",
+        "imageSrc": "skills/dockerLogo.png"
+    },
+    {
+        "title" : "Kubernetes",
+        "imageSrc": "skills/kubernetesLogo.png"
+    }
+]
