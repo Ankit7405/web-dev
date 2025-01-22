@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This is how we use the CDN for using tailwind CSS on the go but for our projects this is not the official way -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleDark = document.getElementById("toggleDark");
+        toggleDark.addEventListener("click", function () {
+          if (document.documentElement.classList.includes("dark")) {
+            document.documentElement.classList.remove("dark");
+          } else {
+            document.documentElement.classList.add("dark");
+          }
+          alert("Click!!");
+        });
+      });
+    </script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              chestnut: "#973F29",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* While styling using tailwind we can come across some places where the styling code becomes bulcky so in order to wrap that code and place it at a single place we can use this directives */
+      @layer components {
+        .card {
+          @apply m-10 rounded-lg bg-white px-6 py-6 shadow-xl ring-1 ring-slate-900/5 dark:bg-black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Here we are using some text based properties -->
+    <h1 class="text-center text-lg text-green-600">Hello world!</h1>
+    <!-- Here for using margin we need to first write border then define it's properties -->
+    <!-- For margin and padding in top and bottom only we can use my or py properties  -->
+    <div
+      class="w-full h-20 bg-violet-400 border-2 border-black rounded-md m-4 p-4"
+    >
+      <!-- So here we can see that we can define already existing properties but also if we want some random value that we can also define -->
+      <p class="text-center font-mono font-extrabold text-[20px]">A Div</p>
+    </div>
+
+    <!-- Layout -->
+    <!-- Just by defining the fixed as posotion it tells that the posotion defined will be followed by that element -->
+    <div class="w-10 h-10 bg-red-600 fixed top-0"></div>
+
+    <!-- Flex properties -->
+    <div class="flex justify-center items-center space-x-20 gap-5">
+      <div class="w-20 h-20 rounded-full bg-blue-500"></div>
+      <div class="w-20 h-20 rounded-full bg-blue-500"></div>
+      <div class="w-20 h-20 rounded-full bg-blue-500"></div>
+      <div class="w-20 h-20 rounded-full bg-blue-500"></div>
+    </div>
+
+    <!-- Grid properties -->
+    <div class="grid grid-cols-2 gap-4 mt-5 pl-5 pr-5">
+      <div class="bg-violet-600 h-12"></div>
+      <div class="bg-violet-600 h-12"></div>
+      <div class="bg-violet-600 h-12"></div>
+      <div class="bg-violet-600 h-12"></div>
+    </div>
+
+    <!-- Media quries -->
+    <!-- Media quires are handled with the key word as md and also we can give combinations for different screen sizes -->
+    <div class="md:block hidden">
+      <p>I will appear at screen resolutions > 768px</p>
+    </div>
+    <div class="max-md:block hidden">
+      <p>I will appear at screen resolutions < 768px</p>
+    </div>
+
+    <!-- Hover and other functions -->
+    <button
+      class="my-2 rounded-xl bg-blue-600 px-4 py-4 mx-4 text-white hover:bg-blue-800 focus:outline-none focus:ring-4"
+    >
+      Click Me!
+    </button>
+
+    <ul class="my-4 space-y-4">
+      <li class="bg-white first:bg-yellow-300">Item 1</li>
+      <li
+        class="bg-white first:bg-yellow-300 even:bg-green-200 odd:bg-blue-200"
+      >
+        Item 2
+      </li>
+      <li
+        class="bg-white first:bg-yellow-300 even:bg-green-200 odd:bg-blue-200"
+      >
+        Item 3
+      </li>
+      <li
+        class="bg-white first:bg-yellow-300 even:bg-green-200 odd:bg-blue-200"
+      >
+        Item 4
+      </li>
+      <li
+        class="bg-white first:bg-yellow-300 even:bg-green-200 odd:bg-blue-200"
+      >
+        Item 5
+      </li>
+      <li
+        class="bg-white first:bg-yellow-300 even:bg-green-200 odd:bg-blue-200"
+      >
+        Item 6
+      </li>
+    </ul>
+
+    <!-- Dark mode implementation -->
+    <!-- For it's implementation we need to give dark property and then define the action or similar with light -->
+    <!-- If we don't define the dark configuration in the tailwind config file then in that case it will pick the profile based on OS -->
+    <!-- Above mentioned script also needs to be mentioned -->
+    <div
+      class="m-10 rounded-lg bg-white px-6 py-6 shadow-xl ring-1 ring-slate-900/5 dark:bg-black"
+    >
+      <h3
+        class="text-base font-medium tracking-tight text-slate-900 dark:text-white"
+      >
+        I am an heading
+      </h3>
+      <p class="mt-2 text-sm text-slate-500 dark:text-blue-100">
+        I am text element describing the heading
+      </p>
+      <button
+        id="button"
+        class="text-blue-200 px-4 py-2 text-sm font-medium mt-8 bg-blue-100 rounded-md"
+        onclick="document.body.classList.toggle('dark')"
+      >
+        Toggle Dark Mode
+      </button>
+    </div>
+
+    <!-- Use of custom defines variables -->
+    <!-- As like in CSS here also we can define vars and then use them while styling -->
+    <!-- Here we have already defined the color as chestnut and now we are using it -->
+    <div class="text-2xl text-chestnut bg-blue-100">
+      <p>Chestnut Color</p>
+    </div>
+  </body>
+</html>
