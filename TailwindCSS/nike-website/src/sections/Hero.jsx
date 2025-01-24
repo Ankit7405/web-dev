@@ -4,7 +4,6 @@ import { statistics, shoes } from "../constants";
 import { bigShoe1 } from "../assets/images";
 import { useState } from "react";
 import ShoeCard from "../components/ShoeCard";
-
 const Hero = () => {
   const [bigShoesImg, setBigShoesImg] = useState(bigShoe1);
   return (
@@ -48,7 +47,7 @@ const Hero = () => {
           height={502}
         />
       </div>
-      <div className="flex sm:gap-6 gap-4 absolute bottom-[1420px] sm:left-[780px] max-sm:px-6">
+      <div className="flex sm:gap-6 gap-4 absolute bottom-[126rem] sm:left-[780px] max-sm:px-6">
         {shoes.map((image, index) => (
           <div key={index}>
             <ShoeCard
