@@ -47,7 +47,7 @@ const Hero = () => {
           height={502}
         />
       </div>
-      <div className="flex sm:gap-6 gap-4 absolute bottom-[126rem] sm:left-[780px] max-sm:px-6">
+      <div className="flex sm:gap-6 gap-4 absolute bottom-[286.5rem] sm:left-[980px] max-sm:px-6">
         {shoes.map((image, index) => (
           <div key={index}>
             <ShoeCard
